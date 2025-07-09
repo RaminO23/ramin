@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Record Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://example.com/hospital-emergency.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #form-container {
+            background: #ffffff;
+            max-width: 600px;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #87CEEB;
+            box-shadow: 0 0 5px rgba(135, 206, 235, 0.3);
+        }
+        button {
+            background-color: #87CEEB;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #7AB8D3;
+            transition: background-color 0.3s ease;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="form-container">
+        <h2>Patient Record Form</h2>
+        <div class="form-group">
+            <label for="hospital">Hospital:</label>
+            <input type="text" id="hospital" name="hospital" required>
+        </div>
+        <div class="form-group">
+            <label for="recordTypes">Record Types:</label>
+            <input type="text" id="recordTypes" name="recordTypes" required>
+        </div>
+        <div class="form-group">
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+        </div>
+        <div class="form-group">
+            <label for="patientDOB">Patient Date of Birth:</label>
+            <input type="date" id="patientDOB" name="patientDOB" required>
+        </div>
+        <button type="submit" onclick="submitForm()">Submit</button>
+    </div>
+
+    <script>
+        function submitForm() {
+            // For demo purposes, we'll just show an alert
+            alert('Form submitted! (This is a demo - no actual submission occurs)');
+        }
+    </script>
+</body>
+</html>
